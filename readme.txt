@@ -2,7 +2,7 @@ Codes carry out evolutionary learning of neural-network protocols for memory era
 
 I run by compiling taskfarmer
 
-g++ -Wall -o deschamps taskfarmer_info_erasure.c -lm -O
+g++ -Wall -o deschamps taskfarmer_info_erasure.cpp -lm -O
 
 and then running
 
