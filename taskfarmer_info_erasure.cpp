@@ -132,8 +132,8 @@ sprintf(st,"cd iteration_%d; g++ -Wall -o swarm_%d info_erasure.cpp -lm -O",n,n)
 
 cout << st << endl;                                                               
  
-// sprintf(st,"cd iteration_%d; sbatch swarm_%d.sh",n,n); system(st); DP CHANGE
-sprintf(st,"cd iteration_%d; ./swarm_%d",n,n); system(st);
+sprintf(st,"cd iteration_%d; sbatch swarm_%d.sh",n,n); system(st); 
+// sprintf(st,"cd iteration_%d; ./swarm_%d",n,n); system(st);
 }}
 
 
@@ -306,8 +306,8 @@ jobcomplete(0);
 sprintf(st,"mv jobcomplete.dat iteration_%d",i);
 system(st);
 
-// sprintf(st,"cd iteration_%d; sbatch swarm_%d.sh",i,i); system(st); DP change
-sprintf(st,"cd iteration_%d; ./swarm_%d",i,i); system(st);
+sprintf(st,"cd iteration_%d; sbatch swarm_%d.sh",i,i); system(st);
+// sprintf(st,"cd iteration_%d; ./swarm_%d",i,i); system(st);
  
 
 }}
