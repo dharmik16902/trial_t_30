@@ -92,7 +92,7 @@ ofstream soutput(st,ios::out);
 soutput << "#!/usr/bin/env bash" << endl;
 sprintf(st,"#SBATCH --job-name=swarm_%d",n);
 soutput << st << endl;
-soutput << "#SBATCH --partition=etna-shared" << endl;
+soutput << "#SBATCH --partition=def-dsivak" << endl;
 //soutput << "#SBATCH --partition=etna" << endl;
 soutput << "#SBATCH --account=nano" << endl;
 soutput << "#SBATCH --qos=normal" << endl;
